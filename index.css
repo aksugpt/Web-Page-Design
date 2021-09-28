@@ -1,0 +1,659 @@
+:root {
+    --mainColor: #000;
+  }
+*{
+    margin:0;
+    padding: 0;
+     ;
+}
+
+@font-face {
+
+    font-family: 'aileronsregular';
+
+    font-style: normal;
+
+    font-weight: normal;
+
+    src: local('Avenir LT Std 65 Medium Oblique'),
+
+    url('./fonts/Ailerons-Typeface.woff2') format('woff2');
+
+}
+.navbar{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0 0;
+    background-color: white;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    position: relative;
+
+}
+.navbar-nav{
+    padding-right: 85px;
+    font-size: 16px;
+}
+
+.carousel-inner{
+    height: 54vh;
+}
+.desk-image{
+    position: absolute;
+    bottom: 0;
+    width: 98%;
+}
+.desk-image img{
+    width: 98.7vw;
+}
+.skewed-box1{
+    background-color: #FFCD34;
+    padding: 100px 0;
+    /* position: absolute; */
+    transform: skew(0deg, 355deg) translateX(0px) translateY(126px);
+}
+
+.sec-nav-items{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-right: 24px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        
+}
+.footer-section{
+    padding-bottom: 80px;
+}
+/* hamburger icon */
+.hamburger-icon{
+    background-color: black;
+    margin: 2px;
+    padding: 3px;
+    cursor: pointer;
+    outline: none;
+    position: absolute;
+    top: 6px;
+    z-index: 2;
+}
+.icon-bar{
+    width: 22px;
+    height: 2px;
+    background-color: white;
+    margin-bottom: 3px;
+    margin-top: 3px;
+}
+li{
+    list-style: none;
+}
+
+.heading-para{
+    color: lightgray;
+    letter-spacing: 2px;
+    font-family: 'aileronsregular';
+}
+.heading-sub{
+    color: #FFCD34;
+    letter-spacing: 2px;
+    font-family: 'aileronsregular';
+}
+.sec-nav-item{
+    
+    padding: 16px;
+}
+.sec-nav{
+    align-items: center;
+    margin-bottom: 0;
+    padding-right: 55px;
+}
+/* .sec-nav li{
+    font-weight: 600;
+} */
+.sec-nav-items .sec-nav-link1{
+    border-bottom: 3px solid black;
+    padding: 20px;
+    color: black;
+    font-family: 'aileronsregular';
+    font-size: 20px;
+   
+    /* text-decoration: none; */
+}
+
+.sec-nav-item::after{
+    display: block;
+    content: '';
+    border-bottom: solid 4px #000000;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+.carousel-indicators li{
+    width: 0px !important;
+    height: 0px !important;
+}
+
+.secondary-nav{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #FFCD34;
+    /* padding: 9px; */
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    position: relative;
+}
+.navbar-block{
+    position: relative;
+}
+.nav-item a{
+    
+    background:
+     linear-gradient(
+       to left,
+       var(--mainColor) 0%,
+       var(--mainColor) 5px,
+       transparent 5px
+     );
+    background-position: 0% 0%;
+    background-repeat: repeat-x;
+    background-size: 102%;
+    padding-left: 10px;
+    text-decoration: none !important;
+    transition: all  300ms ease-in;
+    font-family: 'aileronsregular';
+}
+.nav-item a:hover{
+    background-size: 100px;
+    background:
+     linear-gradient(
+       to left,
+       var(--mainColor) 0%,
+       var(--mainColor) 5px,
+       transparent 
+     ); 
+     color: #FFCD34 !important;
+     transition: all  300ms ease-in;
+    
+}
+.sec-nav-link{
+    color: black;
+    font-family: 'aileronsregular';
+    font-size: 16px;
+    padding: 10px;
+    text-decoration: none;
+    
+}
+a.sec-nav-link:hover{
+    text-decoration: none;
+}
+
+/*logo section*/
+.logo{
+    width: 100%;
+    height: auto;
+}
+.logo-block{
+    max-width: 35vw;
+    padding-left: 100px;
+    position: absolute;
+    top: 0;
+    left: -23px;
+}
+
+/*empty division to put some content*/
+.empty{
+    height: 500px;
+    background-color: white;
+}
+
+
+
+/* heading and paragraph section*/
+.heading1{
+    color: black;
+    font-family: 'aileronsregular';
+    font-size: 70px;
+
+}
+.heading2{
+    color: white;
+    font-family: 'aileronsregular';
+    font-size: 70px;
+    padding-top: 100px;
+}
+.brick{
+    width: 45vw;
+    margin: 0 auto;
+}
+.brick p, .division-block p, .contain-section{
+    font-size: 15px;
+}
+.back-col{
+    background-color: #FFCD34;
+    padding-top: 80px;
+    padding-bottom: 10px;
+    position: relative;
+}
+.parallax-ico.sm{
+    background-image: url(ico-small.png);
+    width: 80px;
+    left: 19%;
+    height: 140px;
+    position: absolute;
+    display: block;
+    top: 90.96px;
+}
+
+.parallax-ico.md{
+    background-image: url(ico-md.png);
+    top: 104.8px;
+    left: 147px;
+    width: 160px;
+    height: 280px;
+    display: block;
+    position: absolute;
+
+}
+.parallax-ico.lg{
+    background-image: url(ico-lg.png);
+    right: 80px;
+    width: 240px;
+    height: 420px;
+    top: -82px;
+    display: block;
+    position: absolute;
+}
+.deal-figure{
+    height: 220px;
+    width: 220px;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.body-block::before{
+    content: "";
+    background-image: url(box-before.png);
+    width: 300px;
+    height: 110px;
+    left: 5%;
+    position: absolute;
+    transform: translateY(100%);;
+}
+.body-block::after{
+    content: "";
+    background-image: url(box-after.png);
+    left: 48%;
+    height: 110px;
+    top: 160px;
+    width: 450px;
+    position: absolute;
+    transform: translateX(-50%);
+    margin-left: -75px;
+}
+.deal-figure img{
+    width: auto;
+    height: 220px;
+}
+.card-title .text-warning{
+    font-size: 20px;
+    font-family: 'aileronsregular';
+}
+.card-title .text-warning.card-link{
+    font-size: 14px;
+    font-family: 'aileronsregular';
+}
+.card-title{
+    padding-top: 100px !important;
+}
+
+p{
+    word-spacing: 2px;
+    
+    font-family: sans-serif;
+}
+.para-col{
+    color: white;
+}
+
+/*what we do section*/
+.contain-block{
+    width: 85vw;
+    margin: 0 auto;
+    background-color: black;
+    padding-bottom: 100px;
+}
+.division-block{
+    width: 45vw;
+    margin: 0 auto;
+}
+a.para-link{
+    color: #FFCD34;
+    text-decoration: none;
+}
+
+
+.card-block{
+    background-color: black;
+    
+    
+}
+.body-block{
+    overflow: hidden;
+    background-color: black;
+}
+.card-link{
+    text-decoration: none;
+}
+.para-block{
+    padding-right: 35px;
+    border-right:1px solid lightgrey;
+    font-size: 15px;
+}
+.para-block1{
+    font-size: 15px;
+    padding-right: 35px;
+}
+.colab{
+    width: 21.5vw;
+}
+.colab-pic{
+    width: 100%;
+    height: auto;
+}
+.collab-block{
+    max-width: 21vw;
+}
+.contain-section{
+   
+    width: 45vw;
+    margin: 0 auto;
+    background-color: white;
+}
+.happen{
+    background-color: white;
+    margin-top: -60px;
+    
+}
+.heading3{
+    font-family: 'aileronsregular';
+    font-size: 65px;
+    margin-bottom: 40px;
+}
+a.link-gal{
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+}
+.heading4{
+    font-family: 'aileronsregular';
+    font-size: 25px;
+    padding-top: 30px;
+}
+a.link-social{
+    transition: all 0.3s ease-in-out;
+    font-family: 'aileronsregular';
+    font-size: 20px;
+    text-decoration: none;
+}
+.buttom-section{
+    background-color: black;
+    position: relative;
+    border-bottom:1px solid #567C83 ;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    
+
+}
+.heading-sec{
+    display: none !important;
+    
+}
+.detail-info{
+    width: 25vw;
+    margin: 0px -14px;
+    
+}  
+
+.contact-info{
+    position: absolute;
+    top: 54px;
+    left: 280px;
+}
+.contact-info h3, p, {
+    font-size: 18px;
+    font-weight: 700;
+}
+.detail-info h1{
+    font-size: 40px;
+}
+
+.foot-logo{
+    width: 100%;
+    height: auto;
+   padding: 5px;
+   
+}
+.footer-logo{
+    max-width: 25vw;
+}
+.text-block{
+    background-color: black;
+    
+    outline: none;
+    margin-bottom: 9px;
+    width: 100%;
+    color: #FFCD34;
+    border-top-style: none;
+    border-left-style: none;
+    border-right-style: none;
+}
+::placeholder{
+    color:#3E4315 ;
+}
+.btn-sub{
+    padding: 3px;
+    background: black;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    margin-top: 20px;
+}
+.btn-sub:hover{
+    background-color: black;
+}
+.sitemap-circle{
+    width: 5px;
+    height: 5px;
+    background-color:#FFCD34 ;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.slick-block{
+    position: relative;
+    background-color: white;
+    padding-left: 0;
+    padding-right: 0;
+}
+.bot-block{
+    background-color: black;
+    padding-bottom: 20px;
+    padding-top: 50px;
+}
+.heading5{
+    font-family: 'aileronsregular';
+    font-size: 45px;
+    color: #FFCD34;
+    margin-top: 50px;
+    letter-spacing: 5px;
+}
+.heading6{
+    font-family: 'aileronsregular';
+    font-size: 20px;
+    color: #FFCD34;
+    letter-spacing: 5px;
+}
+.footer-part{
+    background-color: black;
+}
+.footer-section{
+    background-color: black;
+}
+.text-bot__lister{
+    width: 5px;
+    height: 5px;
+    background-color: #FFCD34;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    margin-right: 15px;
+}
+.text-bot{
+    padding-right: 15px;
+    font-size:13px ;
+}
+sup{
+    vertical-align: super;
+    font-size: 15px;
+}
+
+.skewedbox{
+    background-color: black;
+    padding: 100px 0;
+    -webkit-transform: skew(0deg, 355deg) translateX(0px) translateY(125px);
+        -ms-transform: skew(0deg, 355deg) translateX(0px) translateY(125px);
+            transform: skew(0deg, 355deg) translateX(0px) translateY(125px);
+}
+.skewedbox1{
+    
+    background-color: white;
+    padding: 100px 0;
+    -webkit-transform: skew(0deg, 355deg) translateX(0px) translateY(-70px);
+        -ms-transform: skew(0deg, 355deg) translateX(0px) translateY(-70px);
+            transform: skew(0deg, 355deg) translateX(0px) translateY(-70px);
+}
+
+/* media quary used for nav bar */
+@media only screen and (max-width:1022px){
+    .logo-block{
+        display:none;
+    }
+    .hamburger-icon{
+        position: fixed;
+    }
+    .slick-block{
+        display: none;
+    }
+    .navbar{
+        display: none;
+    }
+    .secondary-nav{
+        display: none;
+    }
+    .heading-sec{
+        
+        display:block !important;
+        
+    }
+    .heading1{
+        display: none !important;
+    }
+    .heading-sub{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: end;
+            -ms-flex-pack: end;
+                justify-content: flex-end;
+        margin-bottom: 0;
+        padding-right: 10px;
+        font-size: 30px;
+        font-size: 20px;
+    }
+    .heading-para{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: end;
+            -ms-flex-pack: end;
+                justify-content: flex-end;
+        padding-top: 10px;
+        margin-bottom: 0;
+        padding-right: 10px;
+        font-size: 10px;
+    
+    }
+    .buttom-section{
+        display: none !important;
+    }
+    .skewedbox{
+        display: none;
+    }
+    .bot-block{
+        display: none !important;
+    }
+    .footer-section{
+        display: none !important;
+    }
+    .skewedbox1{
+        display: none;
+    }
+    .brick{
+        width: 100%;
+    }
+    .division-block{
+        width: 100%;
+    }
+    .contain-section{
+        width: 100% !important;
+        margin-top: 50px;
+    }
+    .division-block{
+        display: block !important;
+    }
+    .contain-block{
+        width: 100%;
+        padding: 0 10px;
+    }
+    .para-block {
+        padding:0 ;
+        border: none;
+    }
+    .para-block1{
+        padding: 0;
+    }
+    
+}
+@media only screen and (min-width:1022px){
+    .hamburger-icon{
+        display: none !important;
+        
+    }
+    
+}
